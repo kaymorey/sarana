@@ -1,0 +1,264 @@
+/*****************************
+*            FONTS           *
+******************************/
+
+@font-face{
+    font-family : "ProximaNova";
+
+    src : url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.eot'); /* Pour IE9 Compat mode */
+    src : url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.eot?') format('eot'),
+          url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.woff') format('woff'),
+          url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.svg#proxima_nova_rgregular') format('svg'),
+          url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.ttf') format('truetype');
+}
+
+@font-face{
+    font-family : "ProximaNovaBold";
+
+    src : url('../fonts/mark_simonson_-_proxima_nova_bold-webfont.eot'); /* Pour IE9 Compat mode */
+    src : url('../fonts/mark_simonson_-_proxima_nova_bold-webfont.eot?') format('eot'),
+          url('../fonts/mark_simonson_-_proxima_nova_bold-webfont.woff') format('woff'),
+          url('../fonts/mark_simonson_-_proxima_nova_bold-webfont.svg#proxima_nova_rgbold') format('svg'),
+          url('../fonts/mark_simonson_-_proxima_nova_bold-webfont.ttf') format('truetype');
+}
+
+@font-face{
+    font-family : "ProximaNovaItalic";
+
+    src : url('../fonts/mark_simonson_-_proxima_nova_semibold_italic-webfont.eot'); /* Pour IE9 Compat mode */
+    src : url('../fonts/mark_simonson_-_proxima_nova_semibold_italic-webfont.eot?') format('eot'),
+          url('../fonts/mark_simonson_-_proxima_nova_semibold_italic-webfont.woff') format('woff'),
+          url('../fonts/mark_simonson_-_proxima_nova_semibold_italic-webfont.svg#proxima_novasemibold_italic') format('svg'),
+          url('../fonts/mark_simonson_-_proxima_nova_semibold_italic-webfont.ttf') format('truetype');
+}
+
+
+/*****************************
+*      GENERAL ELEMENTS      *
+******************************/
+
+body {
+    font-family: "ProximaNova", "Arial", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    width: 1024px;
+    height: 104px;
+    font-size: 24px;
+    color: #FFF;
+    text-align: center;
+    z-index: 300;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -52px;
+    margin-left: -512px;
+}
+
+h1 hr {
+    width: 121px;
+    border: solid #FFF 2px;
+}
+
+h1 .name {
+    font-size: 52px;
+    text-transform: uppercase;
+    letter-spacing: 18px;
+    text-indent: 18px;
+    display: inline-block;
+}
+
+h2 {
+    margin-bottom: 50px;
+    padding-bottom: 5px;
+    border-bottom: solid #2d3669 2px;
+    font-family: "ProximaNovaBold", "Arial", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 24px;
+    color: #1b1950;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+div p {
+    font-size: 22px;
+    color: #1b1950;
+}
+
+div.ms-section.start {
+    background-color: #2d3669;
+}
+
+/*****************************
+*       TEXT PART DIV        *
+******************************/
+
+div.text.part {
+    width: 428px;
+    margin: -20% auto 0 auto;
+    text-align: center;
+}
+
+/*****************************
+*       FULL TEXT DIV        *
+******************************/
+
+div.full {
+    text-align: center;
+    overflow: hidden;
+}
+
+.ms-left div.full .text {
+    margin-right: -100%;
+}
+
+.ms-right div.full .text {
+    margin-left: -100%;
+}
+
+/*****************************
+*        FIRST SECTION       *
+******************************/
+
+.ms-left .first {
+    background: url(../images/background/left1.jpg) no-repeat center right;
+    background-size: cover;
+}
+.ms-right .first {
+    background: url(../images/background/right1.jpg) no-repeat center left;
+    background-size: cover;
+}
+
+/*****************************
+*       SECOND SECTION       *
+******************************/
+
+.ms-left .second {
+    background: url(../images/background/left2.jpg) no-repeat center right;
+    background-size: cover;
+}
+.ms-right .second {
+    background: url(../images/background/right2.jpg) no-repeat center left;
+    background-size: cover;
+}
+
+/*****************************
+*        THIRD SECTION       *
+******************************/
+
+.ms-left .third {
+    background: url(../images/background/left3.jpg) no-repeat center right;
+    background-size: cover;
+}
+.ms-right .third {
+    background: url(../images/background/right3.jpg) no-repeat center left;
+    background-size: cover;
+}
+
+/*****************************
+*         PRESENTATION       *
+******************************/
+
+section.presentation {
+    width: 1024px;
+    height: 147px;
+    z-index: 100;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -73px;
+    margin-left: -512px;
+}
+
+div.presentation {
+    background-color: #eabd85;
+}
+
+/*****************************
+*        WHO ARE WE ONE      *
+******************************/
+
+.ms-right .who-are-we.one {
+    background: url(../images/who-are-we1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/*****************************
+*        WHO ARE WE TWO      *
+******************************/
+
+.ms-left .who-are-we.two {
+    background: url(../images/who-are-we2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/*****************************
+*      WHO ARE WE THREE      *
+******************************/
+
+.ms-right .who-are-we.three {
+    background: url(../images/who-are-we3.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/*****************************
+*           CONTACT          *
+******************************/
+
+section.contact {
+    width: 1024px;
+    height: 353px;
+    text-align: center;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -176px;
+    margin-left: -512px;
+}
+
+.contact h2 {
+    border-color: #FFF;
+}
+
+.contact address {
+    margin: 22px 0 70px 0;
+    font-family: "ProximaNovaItalic" "Arial", sans-serif;
+}
+
+.contact a {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 18px 0;
+    width: 220px;
+    font-size: 24px;
+    color: #1b1950;
+    background-color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.contact h2, .contact p, .contact address {
+    color: #FFF;
+}
+
+div.contact {
+    text-align: center;
+    background-color: #2d3669;
+}
+
+/*****************************
+*           TRIBUTE          *
+******************************/
+
+.ms-left div.tribute {
+    background: url(../images/tribute.jpg) no-repeat center;
+    background-size: cover;
+}
