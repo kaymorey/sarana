@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
                     else if (index == 5 && nextIndex == 4) {
                         $('h1').delay(400).fadeIn();
                     }
-                    
+
                     if (index == 5) {
                         $('div.presentation .text').show();
                         $('section.presentation').hide();
@@ -35,8 +35,17 @@ jQuery(document).ready(function($) {
             });
         },
 
+        toggleMenu: function() {
+            $(document).on('click', 'nav.menu a', function(e) {
+                e.preventDefault();
+
+                $(this).toggleClass('open');
+            });
+        },
+
         init: function() {
             this.initPlugins();
+            this.toggleMenu();
         }
     };
 
