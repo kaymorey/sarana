@@ -171,6 +171,25 @@ header .menu a.open span:after {
     transform: translateY(0) rotate(-45deg);
 }
 
+header nav.main {
+    height: 142px;
+    background-color: #2d3669;
+    text-align: center;
+}
+
+header nav.main ul li {
+    padding: 50px 40px 0 40px;
+    display: inline-block;
+}
+
+header nav.main ul li a {
+    font-family: 'ProximaNova', Arial, sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: #FFF;
+    opacity: 0;
+}
+
 /*****************************
 *       TEXT PART DIV        *
 ******************************/

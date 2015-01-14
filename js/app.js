@@ -40,6 +40,20 @@ jQuery(document).ready(function($) {
                 e.preventDefault();
 
                 $(this).toggleClass('open');
+
+                $nav = $(this).parent().next('nav');
+                if ($(this).hasClass('open')) {
+                    $nav.slideDown();
+                    $nav.find('a').each(function(index) {
+                        var d = 200 + index * 80;
+                        $(this).delay(d).fadeIn();
+                    });
+                }
+                else {
+                    $nav.slideUp(function() {
+                        $nav.find('a').hide();
+                    });
+                }
             });
         },
 
