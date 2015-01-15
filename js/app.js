@@ -45,13 +45,14 @@ jQuery(document).ready(function($) {
                 if ($(this).hasClass('open')) {
                     $nav.slideDown();
                     $nav.find('a').each(function(index) {
-                        var d = 200 + index * 80;
-                        $(this).delay(d).fadeIn();
+                        TweenLite.to($(this), 0.5, {opacity:1, delay: 0.3 + 0.2 * index});
+                        TweenLite.to($(this), 0.5, {top:0, delay: 0.3 + 0.2 * index, ease:Power1.easeOut});
                     });
                 }
                 else {
                     $nav.slideUp(function() {
-                        $nav.find('a').hide();
+                        $nav.find('a').css('opacity', 0);
+                        $nav.find('a').css('top', '-15px');
                     });
                 }
             });
