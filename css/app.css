@@ -192,6 +192,13 @@ header nav.main ul li a {
     opacity: 0;
 }
 
+header nav.main ul li hr {
+    width: 0;
+    border: none;
+    height: 2px;
+    background-color: #FFF;
+}
+
 /*****************************
 *       TEXT PART DIV        *
 ******************************/

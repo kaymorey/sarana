@@ -58,9 +58,21 @@ jQuery(document).ready(function($) {
             });
         },
 
+        menuItems: function() {
+            $(document).on('mouseover', 'nav.main a', function() {
+                var line = $(this).next('hr');
+                TweenLite.to(line, 0.5, {width: '90%'});
+            });
+            $(document).on('mouseout', 'nav.main a', function() {
+                var line = $(this).next('hr');
+                TweenLite.to(line, 0.5, {width: 0});
+            });
+        },
+
         init: function() {
             this.initPlugins();
             this.toggleMenu();
+            this.menuItems();
         }
     };
 
