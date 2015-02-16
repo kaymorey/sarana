@@ -4,6 +4,8 @@ jQuery(document).ready(function($) {
 
         initPlugins: function() {
             $('#multiscroll').multiscroll({
+                anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+                menu: '#menu',
                 easing: 'easeInQuad',
                 onLeave: function(index, nextIndex, direction){
                     if (index == 4 && nextIndex == 5) {
