@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
         initPlugins: function() {
             // Multiscroll plugin
             $('#multiscroll').multiscroll({
-                anchors: ['home', '', '', '', 'association', 'about', '', '', 'contact'],
+                anchors: ['home', '', '', '', 'association', 'about', '', '', 'contact', ''],
                 menu: '#menu',
                 easing: 'easeInQuad',
                 onLeave: function(index, nextIndex, direction) {
